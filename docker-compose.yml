@@ -1,0 +1,9 @@
+version: "3.0"
+services:
+  dbpedia-lookup:
+    image: databus-dumper:latest
+    environment:
+      - DATAPATH=/root/data/
+    volumes: 
+      - ./data:/root/data/
+

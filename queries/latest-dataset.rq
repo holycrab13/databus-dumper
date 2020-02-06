@@ -1,0 +1,6 @@
+CONSTRUCT { ?dataset ?p ?date }  WHERE {
+    ?dataset ?p ?date .
+    ?dataset <http://purl.org/dc/terms/issued> ?date .
+} 
+ORDER BY DESC (?date)
+LIMIT 1

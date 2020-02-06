@@ -1,0 +1,1 @@
+CONSTRUCT { ?dataset ?p ?o } WHERE { ?dataset ?p ?o . ?dataset a <http://dataid.dbpedia.org/ns/core#Dataset> . }

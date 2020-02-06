@@ -1,0 +1,4 @@
+CONSTRUCT { ?dataset ?p ?o } 
+WHERE { ?dataset ?p ?o . ?dataset <http://purl.org/dc/terms/issued> ?date .
+DATASET <http://purl.org/dc/terms/issued> ?lastDate . 
+FILTER (?date > ?lastDate) }
