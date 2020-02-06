@@ -1,4 +1,11 @@
-CONSTRUCT { ?dataset ?p ?o } 
-WHERE { ?dataset ?p ?o . ?dataset <http://purl.org/dc/terms/issued> ?date .
-DATASET <http://purl.org/dc/terms/issued> ?lastDate . 
-FILTER (?date > ?lastDate) }
+CONSTRUCT { ?dataset ?p ?o . ?artifact ?p2 ?o2 . ?group ?p3 ?o3 . } 
+WHERE { 
+    ?dataset ?p ?o . ?dataset <http://purl.org/dc/terms/issued> ?date .
+    DATASET <http://purl.org/dc/terms/issued> ?lastDate .
+    FILTER(?date > ?lastDate)
+    ?dataset a <http://dataid.dbpedia.org/ns/core#Dataset> .
+    ?dataset <http://dataid.dbpedia.org/ns/core#artifact> ?artifact .
+    ?artifact ?p2 ?o2 .
+    ?dataset <http://dataid.dbpedia.org/ns/core#group> ?group . 
+    ?group ?p3 ?o3 .
+}

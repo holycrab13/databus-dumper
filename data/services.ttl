@@ -1,0 +1,149 @@
+<https://databus.dbpedia.org/system/voc/Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://databus.dbpedia.org/system/voc/SharedService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://databus.dbpedia.org/system/voc/SharedService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/voc/SharedService> <http://www.w3.org/2000/01/rdf-schema#label> "Free, shared service"@en .
+<https://databus.dbpedia.org/system/voc/SharedService> <http://www.w3.org/2000/01/rdf-schema#comment> "Free, shared service with no guarantees, other usage and popularity might deteriaorate performance. "@en .
+<https://databus.dbpedia.org/system/voc/SharedService> <http://purl.org/dc/terms/description> "There is an inherent deterioration of Common goods, which are defined in economics as goods that are rivalrous and non-excludable. Similar to overfishing the ocean, database performance is limited by the allocated servers. Scalability incurs an increasing cost burden proportional to popularity as the number of daily concurrent requests grows. Databus builds on community effort and it is unfair to expect 100% uptime or increasing performance with popularity. "@en .
+<https://databus.dbpedia.org/system/voc/DedicatedService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://databus.dbpedia.org/system/voc/DedicatedService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/voc/DedicatedService> <http://www.w3.org/2000/01/rdf-schema#label> "Dedicated service level as offered by provider."@en .
+<https://databus.dbpedia.org/system/voc/Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://databus.dbpedia.org/system/voc/Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application for local deployment, loading data from the bus"@en .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/SharedService> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <http://purl.org/dc/terms/title> "Official DBpedia SPARQL Endpoint and Linked Data Service"@en .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <http://purl.org/dc/terms/description> "<h1>Public DBpedia SPARQL Endpoint </h1> <p>The official DBpedia SPARQL endpoint at dbpedia.org allows you to run SPARQL queries against dbpedia.org/sparql hosted by Virtuoso/OpenLink .</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <http://purl.org/dc/terms/abstract> "The official DBpedia SPARQL endpoint at dbpedia.org allows you to run SPARQL queries against dbpedia.org/sparql hosted by Virtuoso/OpenLink."@en .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/sparql.png> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/banner.png> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/openlink> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/homepage> <https://wiki.dbpedia.org/public-sparql-endpoint> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/openlink/main-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/SharedService> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <http://purl.org/dc/terms/title> "SPARQL Enpoint for DBkWik and Linked Data Service"@en .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <http://purl.org/dc/terms/description> "<h1>DBkWik SPARQL endpoint</h1> <p>see http://dbkwik.webdatacommons.org/</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <http://purl.org/dc/terms/abstract> "We provide a SPARQL and Linked Data endpoint using derefencable URIs. To browse the LOD enpoint, use, e.g., the concept Harry Potter http://dbkwik.webdatacommons.org/resource/l8JEtiYov-za7R0r8_wo3Q==."@en .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/sparql.png> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/banner.png> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/sven-h> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <https://databus.dbpedia.org/system/voc/homepage> <http://dbkwik.webdatacommons.org/sparql> .
+<https://databus.dbpedia.org/system/service/sven-h/dbkwik-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/sven-h/dbkwik> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/SharedService> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <http://purl.org/dc/terms/title> "Live-Updated DBpedia SPARQL Endpoint and Linked Data Service"@en .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <http://purl.org/dc/terms/description> "<h1>Public DBpedia Live Updates </h1> <p>Live updated whenever a Wikipedia article changes, DBpedia Live SPARQL Endpoint.</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <http://purl.org/dc/terms/abstract> "Live updated whenever a Wikipedia article changes, DBpedia Live SPARQL Endpoint hosted by Virtuoso/OpenLink."@en .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/sparql.png> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/banner.png> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/openlink> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/homepage> <https://wiki.dbpedia.org/online-access/DBpediaLive> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/openlink/live-sparql-endpoint> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/DedicatedService> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <http://purl.org/dc/terms/title> "DBpedia Snapshot (Virtuoso PAGO) AWS"@en .
+<https://databus.dbpedia.org/system/service/openlink/aws> <http://purl.org/dc/terms/description> "<h1>Dedicated AWS DBpedia SPARQL</h1> <p>Dedicated AWS DBpedia SPARQL endpoint  provided by Virtuoso/OpenLink .</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <http://purl.org/dc/terms/abstract> "Dedicated AWS DBpedia SPARQL endpoint  provided by Virtuoso/OpenLink."@en .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/openlink-logo.png> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/openlink-logo.png> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/openlink> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/homepage> <https://aws.amazon.com/marketplace/pp/B07BQKYGYQ> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/openlink/aws> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/DedicatedService> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <http://purl.org/dc/terms/title> "DBpedia Live (Virtuoso PAGO) AWS"@en .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <http://purl.org/dc/terms/description> "<h1>Live Updated DBpedia Endpoint</h1> <p>Dedicated AWS DBpedia-Live SPARQL endpoint  provided by Virtuoso/OpenLink .</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <http://purl.org/dc/terms/abstract> "Dedicated AWS DBpedia-Live SPARQL endpoint provided by Virtuoso/OpenLink."@en .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/openlink-logo.png> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/openlink-logo.png> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/openlink> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/homepage> <https://aws.amazon.com/marketplace/pp/B012DSCFEK> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/openlink/aws-live> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/SharedService> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <http://purl.org/dc/terms/title> "DBpedia Spotlight Entity Linker"@en .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <http://purl.org/dc/terms/description> "<h1>Spotlight entity linker</h1> <p>Enter text in multiple languages  and get links to DBpedia</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <http://purl.org/dc/terms/abstract> "Enter text in multiple languages and get links to DBpedia."@en .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/dbpedia_spotlight_logo.jpg> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/dbpedia_spotlight_logo.jpg> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/dbpedia> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/homepage> <https://www.dbpedia-spotlight.org/demo/> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/dbpedia/spotlight> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/SharedService> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <http://purl.org/dc/terms/title> "Linked Data Fragments over DBpedia"@en .
+<https://databus.dbpedia.org/system/service/imec/fragments> <http://purl.org/dc/terms/description> "<h1>Linked Data Fragments over DBpedia</h1> <p></p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <http://purl.org/dc/terms/abstract> "Linked Data Fragments over DBpedia"@en .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/icon> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/ldf.png> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/dbpedia_spotlight_logo.jpg> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/imec> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/homepage> <http://fragments.dbpedia.org> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/imec/fragments> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/Service> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://databus.dbpedia.org/system/voc/DedicatedService> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <http://purl.org/dc/terms/title> "timbr-DBpedia SQL Query Service"@en .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <http://purl.org/dc/terms/description> "<h1>Hosted DBpedia Data in timbr SQL Knowledge Graph</h1> <p>Query DBpedia knowledge directly in SQL.</p>"^^<http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <http://purl.org/dc/terms/abstract> "Query DBpedia knowledge directly in SQL."@en .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/icon> <https://wp-dbpedia.s3.amazonaws.com/images/sql_icon.png> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/banner> <https://raw.githubusercontent.com/dbpedia/databus-content/master/img/sql_banner.png> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/publisher> <https://databus.dbpedia.org/timbr> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/homepage> <https://wiki.dbpedia.org/timbr> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/prefusion> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/fusion> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/mappings> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/generic> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/text> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/transition> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/ontology> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/dbpedia/wikidata> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/mappings> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/generic> .
+<https://databus.dbpedia.org/system/service/timbr/timbr-dbpedia> <https://databus.dbpedia.org/system/voc/targetGroup> <https://databus.dbpedia.org/marvin/wikidata> .
