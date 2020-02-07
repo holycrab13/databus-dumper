@@ -1,5 +1,5 @@
-CONSTRUCT { ?s ?p ?o } WHERE 
-{ 
-	?s ?p ?o . 
-        { ?s a <http://dataid.dbpedia.org/ns/core#Group> . } UNION { ?s a <http://dataid.dbpedia.org/ns/core#Artifact> . } UNION { ?s a <http://dataid.dbpedia.org/ns/core#Dataset> . } 
+CONSTRUCT { ?s ?p ?o } WHERE { ?s ?p ?o .
+	{ ?s a <http://dataid.dbpedia.org/ns/core#Group> . } UNION
+	{ ?s a <http://dataid.dbpedia.org/ns/core#Artifact> . } UNION
+	{ ?s a <http://dataid.dbpedia.org/ns/core#Dataset> . }
 }
