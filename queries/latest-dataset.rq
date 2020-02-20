@@ -1,4 +1,4 @@
-CONSTRUCT { ?dataset ?p ?date }  WHERE {
+SELECT ?date WHERE {
     ?dataset ?p ?date .
     ?dataset <http://purl.org/dc/terms/issued> ?date .
     ?dataset a <http://dataid.dbpedia.org/ns/core#Dataset> . 

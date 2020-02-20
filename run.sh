@@ -47,27 +47,29 @@ mv /tmp/databusdump/* ${FOLDER}
 rm $DATAPATH/download.lck
 
 # get the latest dataset
-LATEST=$(curl -H "Accept: text/plain" --data-urlencode "query@./queries/latest-dataset.rq"  https://databus.dbpedia.org/repo/sparql | sed 's/\s.*$//')
+LATEST=$(curl -H "Accept: text/tab-separated-values" --data-urlencode "query@./queries/latest-dataset.rq"  https://databus.dbpedia.org/repo/sparql | sed '2q;d')
 echo "Latest loaded dataset is $LATEST. Updating query."
 echo "Waiting for new uploads..."
 
 QUERY=$(<./queries/new-datasets.rq)
-QUERY=${QUERY/DATASET/$LATEST}
+QUERY=${QUERY/LATESTDATE/$LATEST}
 
 while true; do
     sleep 60
     echo "Checking for new uploads..."
+
 
     NEW_DATASETS=$(curl -H "Accept: text/turtle" --data-urlencode "query=${QUERY}"  https://databus.dbpedia.org/repo/sparql)
 
     if [ "$NEW_DATASETS" != "# Empty TURTLE" ]; then
         FILE="$FOLDER/$(date +'%T%m%d').ttl"
         echo ${NEW_DATASETS} > ${FILE}
-        LATEST=$(curl -H "Accept: text/plain" --data-urlencode "query@./queries/latest-dataset.rq"  https://databus.dbpedia.org/repo/sparql | sed 's/\s.*$//')
+        LATEST=$(curl -H "Accept: text/tab-separated-values" --data-urlencode "query@./queries/latest-dataset.rq"  https://databus.dbpedia.org/repo/sparql | sed '2q;d')
         echo "New uploads dumped to $FILE"
         echo "Latest loaded dataset is $LATEST. Updating query."
-        echo "Waiting for new uploads..."
         QUERY=$(<./queries/new-datasets.rq)
-        QUERY=${QUERY/DATASET/$LATEST}
+        QUERY=${QUERY/LATESTDATE/$LATEST}
+        echo $QUERY
+        echo "Waiting for new uploads..."
     fi
 done
